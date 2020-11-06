@@ -51,9 +51,5 @@ echo "<p>
       <li>
         _ENV: contém um array associativo com variáveis passadas para o script atual via método do ambiente.
         Na internet, equivale ao _SERVER.
-
-
         "
-    
-
 ?>
