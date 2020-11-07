@@ -16,9 +16,13 @@ echo "<p>Quando o nome da variável for identificado entre chaves {}, o PHP far�
 ${123} = 'abc';
 echo "<p><li>".${'123'};
 echo "<p>
+        <h3>Variáveis</h3>";
+echo "<p>
         Além das variáveis definidas pelo desenvolvedor, o PHP oferece variáveis nativas, que são 
         chamadas de superglobais, pois estão disponíveis em qualquer parte do código. Vejamos a apresentação
-        delas a seguir:";
+        delas a seguir:
+      <p>
+        <h4><u><i>*OBS* Antes de todas as variáveis nativas tem que colocar o dimbolo do dólar ($).</i></U></h4>";
 echo "<p>
         <li>
         GLOBALS: contém todas as variáveis que estão disponíveis no escopo global, na forma de um array que contém
@@ -51,5 +55,6 @@ echo "<p>
       <li>
         _ENV: contém um array associativo com variáveis passadas para o script atual via método do ambiente.
         Na internet, equivale ao _SERVER.
-        "
+        ";
+      
 ?>
