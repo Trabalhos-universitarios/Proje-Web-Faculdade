@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: blue;
+    
+}
+/* ATACANDO O CABEÇALHO DA PAGINA*/
+#cabecalho{
+    color: orangered;
+    width: 180px;
+    padding: 0px 0;
+    float: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    
+}
+/* ATACANDO O MENU DE OPÇÕES DE BAGAGENS*/
+#menuOpcoes{
+    padding: 25px 0;
+    text-align: center;
+    table-layout: auto;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#menuOpcoes a{
+    text-decoration: none;
+    color: orangered;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.875rem;
+}
+#menuOpcoes ul li{
+    /* faz com que as palavras do menu fiquem uma do lado da outra*/
+    display: inline-block;
+    margin: 0 3px; /*faz com que cada palavra do menu fique afastada uma da outra, ex: home  equipe  serviços  etc*/
+}
+
+/* faz o efeito branco nas letras do menu quando passa o mouse em cima*/
+#menuOpcoes ul li a:hover{
+    color:white;
+}
+#menuOpcoes ul li a.active{ 
+    color: white;
+}
+
+/* ATACANDO A CLASS slide E imgSlide*/
+.slide{
+    margin: 200px auto;
+    width: 90%;
+    height: 800px;
+    position: relative;
+    overflow: hidden;
+}
+.imgSlide{
+    position: absolute;
+    opacity: 0;
+    animation-name: animacao;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+.imgSlide:nth-child(1){
+
+}
+.imgSlide:nth-child(2){
+    animation-delay: 5s;
+
+}
+.imgSlide:nth-child(3){
+    animation-delay: 10s;
+}
+.imgSlide:nth-child(4){
+
+}
+.imgSlide:nth-child(5){
+    animation-delay: 15s;
+
+}
+.imgSlide:nth-child(6){
+    animation-delay: 20s;
+}
+.imgSlide:nth-child(7){
+
+}
+.imgSlide:nth-child(8){
+    animation-delay: 25s;
+
+}
+.imgSlide:nth-child(9){
+    animation-delay: 30s;
+}
+@keyframes animacao{
+    25%{
+        opacity: 1;
+        transform: scale(1.1,1.1);
+    }
+    50%{
+        opacity: 0;
+    }
+}
+
+
+
+/* ATACANDO O RODAPÉ DA PAGINA*/
+#rodape{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    color: orangered;
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+

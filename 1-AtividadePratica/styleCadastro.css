@@ -1,0 +1,21 @@
+body {
+    position: absolute;
+    left: 250px;
+    top: 100px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace;
+    color: orangered;
+    background-color: white;
+
+}
+
+#cadastro {
+    position: relative;
+    top: 0px;
+    width: 88%;
+    padding: 18px;
+    margin: 0;
+    background: white;
+}
