@@ -37,7 +37,7 @@
                     </p>
                     <p class="link">
                         Ainda não é cadastrado?
-                        <a href="cadastro.html">Cadastre-se</a>
+                        <a href="cadastro.php">Cadastre-se</a>
                     </p>
                 </form>
             </div>

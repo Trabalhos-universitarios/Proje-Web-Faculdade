@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="styleCadastro.css">
+    <link rel="stylesheet" href="css/styleCadastro.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Pagina interna</title>
@@ -92,7 +92,7 @@
             </p>
             OU
             <p>
-                <a href="login.html">Voltar ao login</a>
+                <a href="login.php">Voltar ao login</a>
             </p>
         </form>
     </div>
