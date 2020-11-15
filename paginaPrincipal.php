@@ -25,7 +25,7 @@
         <br><h1>Seja bem vindo ao Borrow Bag!</h1></br>
     </div>
     <section class="slide">
-        <img class="imgSlide" src="img/Captura de Tela (01).png">>
+        <img class="imgSlide" src="img/Captura de Tela (0).png">>
         <img class="imgSlide" src="img/Captura de Tela (02).png">
         <img class="imgSlide" src="img/Captura de Tela (03).png">
         <img class="imgSlide" src="img/Captura de Tela (04).png">

@@ -45,7 +45,6 @@ body{
 #menuOpcoes ul li a.active{ 
     color: white;
 }
-
 /* ATACANDO A CLASS slide E imgSlide*/
 .slide{
     margin: 200px auto;
@@ -62,6 +61,7 @@ body{
     animation-iteration-count: infinite;
 }
 .imgSlide:nth-child(1){
+    animation-delay: 0s;
 
 }
 .imgSlide:nth-child(2){
@@ -72,24 +72,26 @@ body{
     animation-delay: 10s;
 }
 .imgSlide:nth-child(4){
-
-}
-.imgSlide:nth-child(5){
     animation-delay: 15s;
 
 }
-.imgSlide:nth-child(6){
+.imgSlide:nth-child(5){
     animation-delay: 20s;
+
+}
+.imgSlide:nth-child(6){
+    animation-delay: 25s;
 }
 .imgSlide:nth-child(7){
+    animation-delay: 30s;
 
 }
 .imgSlide:nth-child(8){
-    animation-delay: 25s;
+    animation-delay: 35s;
 
 }
 .imgSlide:nth-child(9){
-    animation-delay: 30s;
+    animation-delay: 40s;
 }
 @keyframes animacao{
     25%{

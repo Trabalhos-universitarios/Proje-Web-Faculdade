@@ -1,21 +1,63 @@
-body {
-    position: absolute;
-    left: 250px;
-    top: 100px;
-    font-style: normal;
-    font-weight: 500;
-    font-size: medium;
-    font-family: 'Courier New', Courier, monospace;
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("../img/img-login-02.jpg");
+    position: relative;
+    height: 80vh;
+    width: 80vw;
+    background-size: cover;
     color: orangered;
-    background-color: white;
+    text-align: center;
+}
+h1{
+    color: orangered;
+    position: relative;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: underline;
+    color: orangered;
+}
+a.active{ 
+    color: orangered;
+}
+input{
+    display: block;
+    height: 55px;
+    width: 400px;
+    margin: 10px;
+    border-radius: 30px;
+    border: 1px solid black;
+    font-size: 16pt;
+    padding: 16px 20px;
+    background-color: rgba(255,255,255,0.01);
+    color: white;
 
 }
-#login{
-    position: relative;
-    top: 0px;
-    width: 250%;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-    background: white;
+/*input[type=submit]{
+
+
+}*/
+div#corpo-form{
+    width: 420px;
+    margin: 150px auto 0px auto;
+}
+
+::-webkit-input-placeholder{
+    color: orangered;
+}
+:-moz-placeholder{
+    color: orangered;
+}
+::-moz-placeholder{
+    color: orangered;
+}
+:-ms-input-placeholder{
+    color: orangered;
 }
