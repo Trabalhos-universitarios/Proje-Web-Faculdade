@@ -28,7 +28,7 @@
         <h1>Login</h1>
         <form method="POST" action="processaDados.php">
             <!--Quando o Back End estiver pronto a ação será buscar nele o login e a senha, ou seja, no documento processaDados.php-->
-            <input id="email_usuario" name="nome_usuario" required="required" type="email" placeholder="Usuário" />
+            <input id="usuario" name="usuario" required="required" type="email" placeholder="Usuário" />
             <input id="senha" name="senha" required="required" type="password" placeholder="Senha" />
             <input id="submit" name="logar" type="submit" value="logar" />
             Ainda não é cadastrado?

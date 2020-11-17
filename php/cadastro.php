@@ -30,7 +30,6 @@
             <input id="ultimo_nome" name="ultimo_nome" require="required" type="text" placeholder="Digite seu último nome" maxlength="20" />
             <input id="email" name="email" require="required" type="email" placeholder="Digite seu e-mail" maxlength="30" />
             <input id="numero_celular" name="numero_celular" require="required" type="tel" pattern="{2} \d{5} \d{4}" placeholder="Ex: 41 99999 9999" max="15" />
-            <input id="nome_usuario" name="nome_usuario" required="required" type="text" placeholder="Escolha um nome de usuário" />
             <input id="senha" name="senha" required="required" type="password" placeholder="Digite uma senha de no máx 10 caracteres" maxlength="10"/>
             <input id="confere_senha" name="confere_senha" require="required" type="password" placeholder="Repita a senha" maxlength="10"/>
             <input type="submit" value="cadastrar" />
