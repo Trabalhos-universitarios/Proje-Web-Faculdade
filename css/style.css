@@ -29,7 +29,7 @@ div#corpo-form input{
     border: 1px solid black;
     font-size: 16pt;
     padding: 16px 20px;
-    background-color: rgba(255,255,255,0.01);
+    background-color: rgba(255,255,255,0.01); /*ESSA LINHA FAZ COM QUE O FORMULÁRIO FIQUE TRANSPARENTE*/
     color: white;
     outline: none;
 
