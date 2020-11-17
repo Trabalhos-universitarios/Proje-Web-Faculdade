@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    color: orangered;
+    position: relative;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: underline;
+    color: orangered;
+}
+a.active{ 
+    color: orangered;
+}
+
+/* ATACANDO O FORMULARIO LOGIN*/ 
+div#corpo-form input{
+    display: block;
+    height: 30px;
+    width: 400px;
+    margin: 10px;
+    border-radius: 30px;
+    border: 1px solid black;
+    font-size: 16pt;
+    padding: 16px 20px;
+    background-color: rgba(255,255,255,0.01);
+    color: white;
+    outline: none;
+
+}
+div#corpo-form input[type=submit]{
+    height: 55px;
+    width: 440px;
+    background-color: orangered;
+    border: none;
+    cursor: pointer;
+}
+div#corpo-form{ 
+    width: 420px;
+    margin: 150px auto 0px auto;
+}
+div#corpo-form input[type=submit]:hover{
+    background-color: white;
+    color: orangered;
+}
+div#corpo-form input[type=submit].active{ 
+    background-color: white;
+    color: orangered;
+}
+
+/* ATACANDO O FORMULARIO CADASTRO*/
+div#corpo-form-cad input{
+    display: block;
+    height: 30px;
+    width: 400px;
+    margin: 10px;
+    border-radius: 30px;
+    border: 1px solid black;
+    font-size: 12pt;
+    padding: 16px 20px;
+    background-color: rgba(255,255,255,0.01);
+    color: white;
+    outline: none;
+}
+div#corpo-form-cad{ 
+    width: 460px;
+    margin: 10px auto 0px auto;
+}
+div#corpo-form-cad input[type=submit]{
+    height: 50px;
+    width: 440px;
+    text-align: center;
+    background-color: white;
+    color: orangered;
+    border: none;
+    cursor: pointer;
+}
+div#corpo-form-cad input[type=submit]:hover{
+    background-color: orangered;
+    color: white;
+}
+div#corpo-form-cad input[type=submit].active{ 
+    background-color: orangered;
+    color: white;
+}
+
+
+
+::-webkit-input-placeholder{
+    color: orangered;
+}
+:-moz-placeholder{
+    color: orangered;
+}
+::-moz-placeholder{
+    color: orangered;
+}
+:-ms-input-placeholder{
+    color: orangered;
+}
