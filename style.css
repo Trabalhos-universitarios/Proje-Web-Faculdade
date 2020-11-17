@@ -2,25 +2,25 @@
     margin: 0;
     padding: 0;
 }
-h1{
+h1{ /*Atacando o H1 tanto do login quanto do cadastro*/
     color: orangered;
     position: relative;
     text-align: center;
 }
-a{
+a{/*Atacando as ancoras tanto do login quanto do cadastro*/
     text-decoration: none;
     color: black;
 }
-a:hover{
+a:hover{/* esse trecho faz com que ao passar o mouse em cima da palavra ela mude decor e apareça o traço em baixo como de um link*/
     text-decoration: underline;
     color: orangered;
 }
-a.active{ 
+a.active{ /*Esse complementa o de cima*/
     color: orangered;
 }
 
 /* ATACANDO O FORMULARIO LOGIN*/ 
-div#corpo-form input{
+div#corpo-form input{ 
     display: block;
     height: 30px;
     width: 400px;
@@ -34,7 +34,7 @@ div#corpo-form input{
     outline: none;
 
 }
-div#corpo-form input[type=submit]{
+div#corpo-form input[type=submit]{ /*Aqui atacamos somente o botão submit do login*/
     height: 55px;
     width: 440px;
     background-color: orangered;
@@ -45,7 +45,7 @@ div#corpo-form{
     width: 420px;
     margin: 150px auto 0px auto;
 }
-div#corpo-form input[type=submit]:hover{
+div#corpo-form input[type=submit]:hover{/* esse trecho faz com que ao passar o mouse em cima do botão ele mude de cor, mais sem traço em baixo como de um link*/
     background-color: white;
     color: orangered;
 }
@@ -81,7 +81,7 @@ div#corpo-form-cad input[type=submit]{
     border: none;
     cursor: pointer;
 }
-div#corpo-form-cad input[type=submit]:hover{
+div#corpo-form-cad input[type=submit]:hover{/* esse trecho faz com que ao passar o mouse em cima do botão ele mude de cor, mais sem traço em baixo como de um link*/
     background-color: orangered;
     color: white;
 }
@@ -91,7 +91,7 @@ div#corpo-form-cad input[type=submit].active{
 }
 
 
-
+/*ATACANDO OS PLACEHOLDERS PARA MUDAR SUAS CORES*/
 ::-webkit-input-placeholder{
     color: orangered;
 }
