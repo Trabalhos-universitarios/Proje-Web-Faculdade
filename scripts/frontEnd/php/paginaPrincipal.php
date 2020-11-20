@@ -14,11 +14,11 @@
     </div>
     <div id="menuOpcoes">
         <ul>
-            <li><a href="../html/bagagensTamanhoGG.html" title="GG">Tamanho GG</a></li>
-            <li><a href="bagagensTamanhoG.html" title="G">Tamanho G</a></li>
-            <li><a href="bagagensTamanhoM.html" title="M">Tamanho M</a></li>
-            <li><a href="bagagensTamanhoP.html" title="P">Tamanho P</a></li>
-            <li><a href="bagagensTamanhoPP.html" title="PP">Tamanho PP</a></li>
+            <li><a href="../bagagens php/bagagensTamanhoGG.php" title="GG">Tamanho GG</a></li>
+            <li><a href="../bagagens php/bagagensTamanhoG.php" title="G">Tamanho G</a></li>
+            <li><a href="../bagagens php/bagagensTamanhoM.php" title="M">Tamanho M</a></li>
+            <li><a href="../bagagens php/bagagensTamanhoP.php" title="P">Tamanho P</a></li>
+            <li><a href="../bagagens php/bagagensTamanhoPP.php" title="PP">Tamanho PP</a></li>
             <div id="sair">
                 <a href="../../backEnd/sair.php" name="sair" title="sair">Sair</a>
             </div>
