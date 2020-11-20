@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* ATACANDO H1*/
+h1{
+    color: orangered;
+    background-color: white;
+    text-align: center;
+}
+
+/*ATACANDO AS ANCORAS*/
+a:hover{/* faz o efeito branco nas letras do menu quando passa o mouse em cima*/
+    color: white;
+    text-decoration: underline;
+}
+a.active{
+    color: white;
+}
+
+/*ATACADO OS INPUTS */
+div#imagens input{
+    display: block;
+    border-radius: 30px;
+    border: 1px solid black;
+    font-size: 10pt;
+    padding: 3px 15px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+div#imagens input:hover{
+    background-color: white;
+    color: orangered;
+    text-decoration: underline;
+}
+div#imagens input.active{
+    background-color: orangered;
+    color: white;
+}
+
+/*ATACANDO BOTÃO VOLTAR*/
+div#voltar input{
+    display: block;
+    border-radius: 30px;
+    border: 1px solid black;
+    font-size: 12pt;
+    padding: 10px 25px;
+    background-color: white;
+    color: orangered;
+    border: none;
+    cursor: pointer;
+}
+div#voltar input:hover{
+    background-color: orangered;
+    color: white;
+    text-decoration: underline;
+}
+div#voltar input.active{
+    background-color: orangered;
+    color: white;
+}
+div#voltar input{
+    margin: 10px auto 10px auto;
+}
