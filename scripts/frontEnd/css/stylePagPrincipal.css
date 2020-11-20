@@ -31,6 +31,7 @@ body{
     text-transform: uppercase;
     font-weight: 600;
     font-size: 0.875rem;
+    
 }
 #menuOpcoes ul li{
     /* faz com que as palavras do menu fiquem uma do lado da outra*/
@@ -45,6 +46,7 @@ body{
 #menuOpcoes ul li a.active{ 
     color: white;
 }
+
 /* ATACANDO A CLASS slide E imgSlide*/
 .slide{
     margin: 200px auto;
@@ -102,7 +104,23 @@ body{
         opacity: 0;
     }
 }
+/*ATACANDO O BOTÃO SAIR DA PAGINA*/
+#sair a{
+    color: white;
+    position: absolute;
+    left: 80%;
+    top: 27px;
+    width: 50px;
+    
+}
 
+#sair a:hover{
+    text-decoration: underline;
+    color: orangered;
+}
+#sair a.active{ 
+    color: orangered;
+}
 
 
 /* ATACANDO O RODAPÉ DA PAGINA*/
