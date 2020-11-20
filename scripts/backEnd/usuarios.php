@@ -16,7 +16,7 @@ Class usuario
         }
     }
 
-    public function cadastrar($primeiro_nome, $ultimo_nome, $email,  $telefone, $senha){
+    public function cadastrar($primeiro_nome, $ultimo_nome, $email, $telefone, $senha){
         global $pdo;
         //verificação
         $sql = $pdo -> prepare("SELECT id_usuarios FROM usuarios WHERE email = :e");
@@ -26,9 +26,9 @@ Class usuario
             return false;
         } else {
             //cadastro
-            $sql = $pdo -> prepare("INSERT INTO cliente (primeiro_nome, ultimo_nome, email, telefone, senha) VALUES(:n, :d, :t, :e, :s)");
-            $sql -> bindValue(":n", $primeiro_nome);
-            $sql -> bindValue(":d", $ultimo_nome);
+            $sql = $pdo -> prepare("INSERT INTO usuarios (primeiro_nome, ultimo_nome, email, telefone, senha) VALUES(:pn, :un, :e, :t, :s)");
+            $sql -> bindValue(":pn", $primeiro_nome);
+            $sql -> bindValue(":un", $ultimo_nome);
             $sql -> bindValue(":e", $email);
             $sql -> bindValue(":t", $telefone);
             $sql -> bindValue(":s", md5($senha));
