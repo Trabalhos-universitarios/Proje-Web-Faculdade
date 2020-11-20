@@ -50,9 +50,9 @@ Class usuario
 
         if ($sql -> rowCount() > 0){
             //iniciar sessão
-            $info = $sql -> fetch();
+            $dado = $sql -> fetch();
             session_start();
-            $_SESSION['id_usuario'] = $info['id_usuario'];
+            $_SESSION['id_usuario'] = $dado['id_usuario'];
             return true;
         } else {
             return false;

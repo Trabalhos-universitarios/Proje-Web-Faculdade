@@ -6,6 +6,7 @@
     define('host_user', 'root');
     define('host_pwd', "");
     define('db_name', 'projeto_borrowbag');
+    
 ?>
 
 <!DOCTYPE html>
@@ -38,7 +39,7 @@
         <h1>Login</h1>
         <form method="POST">
             <!--Quando o Back End estiver pronto a ação será buscar nele o login e a senha, ou seja, no documento processaDados.php-->
-            <input id="usuario" name="usuario" required="required" type="email" placeholder="Usuário" />
+            <input id="email" name="email" required="required" type="email" placeholder="E-mail" />
             <input id="senha" name="senha" required="required" type="password" placeholder="Senha" />
             <input id="submit" name="logar" type="submit" value="Acessar" />
             Ainda não é cadastrado?
@@ -56,10 +57,10 @@
         $user -> conectar(db_name, host_name,host_user,host_pwd);
         if ($user -> msgErro == ""){
             if($user -> logar($email, $senha)){
-                header("location: paginaPrincipal.html");
+                header("location: paginaPrincipal.php");
             } else {
                 ?>
-                <div class="msg-erro"> Email ou Senha não conferem </div>
+                <div class="msg-erro" style="color: red;"><strong> E-mail ou senha não conferem </strong></div>
             <?php
             }
         } else {

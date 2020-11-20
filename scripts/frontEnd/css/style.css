@@ -90,7 +90,6 @@ div#corpo-form-cad input[type=submit].active{
     color: white;
 }
 
-
 /*ATACANDO OS PLACEHOLDERS PARA MUDAR SUAS CORES*/
 ::-webkit-input-placeholder{
     color: orangered;

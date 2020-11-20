@@ -65,21 +65,21 @@
                     if ($senha == $confere_Senha) {
                         if ($user->cadastrar($primeiro_nome, $ultimo_nome, $email, $telefone, $senha, $confere_Senha)) {
         ?>
-                            <div id="msg-sucesso">Email cadastrado com sucesso. Agora é só logar</div>
+                            <div id="msg-sucesso" style="color: green;"><strong>E-mail cadastrado com sucesso!</strong></div>
                         <?php
                         } else {
                         ?>
-                            <div class="msg-erro">Este email já foi usado</div>
+                            <div class="msg-erro" style="color: yellow;"><strong> Este email já foi usado</strong></div>
                         <?php
                         }
                     } else {
                         ?>
-                        <div class="msg-erro">As senhas não são iguais</div>
+                        <div class="msg-erro" style="color: red;"><strong> As senhas não são iguais </strong></div>
                     <?php
                     }
                 } else {
                     ?>
-                    <div class="msg-erro">
+                    <div class="msg-erro" style="color: red;">
                         <?php echo "ERRO: " . $user->$msgErro; ?>
                     </div>
                 <?php
