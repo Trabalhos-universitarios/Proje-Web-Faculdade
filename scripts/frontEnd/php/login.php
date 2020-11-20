@@ -42,7 +42,7 @@
             <input id="email" name="email" required="required" type="email" placeholder="E-mail" />
             <input id="senha" name="senha" required="required" type="password" placeholder="Senha" />
             <input id="submit" name="logar" type="submit" value="Acessar" />
-            Ainda não é cadastrado?
+            <strong> Ainda não é cadastrado? </strong>
             <a href="cadastro.php"><strong>Cadastre-se</strong></a>
         </form>
     </div>
