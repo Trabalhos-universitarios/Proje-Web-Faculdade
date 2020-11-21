@@ -15,7 +15,7 @@
         <link rel="stylesheet" href="../css/style.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=, initial-scale=1.0">
-        <title>Pagina interna</title>
+        <title>Cadastro</title>
     </head>
 
     <!-- Esse trecho de código é responsável por atacar o body da tela de cadastro -->

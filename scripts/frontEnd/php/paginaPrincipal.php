@@ -24,11 +24,11 @@ if(!isset($_SESSION['id_usuario'])){
     </div>
     <div id="menuOpcoes">
         <ul>
-            <li><a href="../pages/bagagensTamanhoGG.html" title="GG">Tamanho GG</a></li>
-            <li><a href="../pages/bagagensTamanhoG.html" title="G">Tamanho G</a></li>
-            <li><a href="../pages/bagagensTamanhoM.html" title="M">Tamanho M</a></li>
-            <li><a href="../pages/bagagensTamanhoP.html" title="P">Tamanho P</a></li>
-            <li><a href="../pages/bagagensTamanhoPP.html" title="PP">Tamanho PP</a></li>
+            <li><a id="GG" href="../pages/bagagensTamanhoGG.html" title="GG">Tamanho GG</a></li>
+            <li><a id="G" href="../pages/bagagensTamanhoG.html" title="G">Tamanho G</a></li>
+            <li><a id="M" href="../pages/bagagensTamanhoM.html" title="M">Tamanho M</a></li>
+            <li><a id="P" href="../pages/bagagensTamanhoP.html" title="P">Tamanho P</a></li>
+            <li><a id="PP" href="../pages/bagagensTamanhoPP.html" title="PP">Tamanho PP</a></li>
             <div id="sair">
                 <a href="../../backEnd/sair.php" name="sair" title="sair">Sair</a>
             </div>
