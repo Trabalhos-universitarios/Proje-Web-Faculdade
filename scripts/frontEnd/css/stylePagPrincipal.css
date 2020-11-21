@@ -13,7 +13,6 @@ body{
     width: 180px;
     padding: 0px 0;
     float: left;
-    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 30px;
     
 }
@@ -23,7 +22,7 @@ body{
     text-align: center;
     table-layout: auto;
     color: white;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    
 }
 #menuOpcoes a{
     text-decoration: none;
@@ -130,7 +129,7 @@ body{
     width: 100%;
     color: orangered;
     text-align: left;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    
 
 }
 

@@ -22,6 +22,7 @@
 <!-- Esse trecho de código é responsável por atacar o body da tela de login -->
 <style>
     body{
+        font-family: Arial, Helvetica, sans-serif;
     background-image: url("../img/img-login-02.jpg");
     position: relative;
     height: 80vh;

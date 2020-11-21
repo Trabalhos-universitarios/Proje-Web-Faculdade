@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h2{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-align: center;
+    color: orangered;
+    background-color: white;
+}
+
+/* ATACANDO FORMULARIO DE DATA*/
+div#datas input{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    display: inline;
+    height: 20px;
+    width: 150px;
+    margin: 10px;
+    border-radius: 30px 10px;
+    border: 1px solid black;
+    font-size: 10pt;
+    padding: 5px 10px;
+    background-color: rgba(255, 255, 255, 0.01);
+    color: white;
+    outline: none;
+
+}
+div#datas label{
+    margin: 10px;
+    color: white;
+}
+div#datas {
+    background-color: orangered;
+}
+div#datas input[type=date] {
+    cursor: pointer;
+}
+
+/* ARACANDO O DOTÃO VERIFICAR*/
+div#verifica input[type=submit] {
+    height: 25px;
+    width: 100px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    position: absolute;
+    margin: 30px 10px;
+    
+}
+
+
+div#verifica input[type=submit]:hover {
+    background-color: white;
+    color: orangered;
+    border: 1px solid orangered;
+}
+div#verifica input[type=submit].active {
+    background-color: orangered;
+    background-color: white;
+    
+}

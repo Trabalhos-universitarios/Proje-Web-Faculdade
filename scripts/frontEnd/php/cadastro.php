@@ -21,6 +21,7 @@
     <!-- Esse trecho de código é responsável por atacar o body da tela de cadastro -->
     <style>
         body {
+            font-family: Arial, Helvetica, sans-serif;
             background-image: url("../img/img-login-02.jpg");
             position: relative;
             height: 109vh;
