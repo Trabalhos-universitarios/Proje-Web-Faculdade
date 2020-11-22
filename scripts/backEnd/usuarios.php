@@ -62,4 +62,65 @@ Class usuario
         }
 
     }
+
+    /** ABAIXO ESTÃO AS FUNÇÕES DA AREA DOS ADMINISTRADORES DO SITE */
+
+    /** FUNÇÃO DE CADASTRO DE ADMINISTRADOR INTERNO (FUNCIONARIO ETC...) */
+    public function cadastrarAdmin($cargo, $nome, $CPF, $telefone, $email, $senha){
+        global $pdo;
+        //verificação
+        $sql = $pdo -> prepare("SELECT id_admin FROM administradores WHERE email = :e");
+        $sql -> bindValue(":e", $email);
+        $sql -> execute();
+        if ($sql -> rowCount() > 0){
+            return false;
+        } else {
+            //cadastro
+            $sql = $pdo -> prepare("INSERT INTO administradores ($cargo, $nome, $CPF, $telefone, $email, $senha) VALUES(:c, :n, :cp, :t, :e, :s)");
+            $sql -> bindValue(":c", $cargo);
+            $sql -> bindValue(":n", $nome);
+            $sql -> bindValue(":cp", $CPF);
+            $sql -> bindValue(":t", $telefone);
+            $sql -> bindValue(":e", $email);
+            $sql -> bindValue(":s", md5($senha));
+    
+            $sql -> execute();
+            return true;
+        }
+    
+    }
+
+    /** FUNÇÃO DE LOGIN DE ADMINISTRADOR INTERNO (FUNCIONARIO ETC...) */
+    public function logarAdmin($email, $senha){
+        global $pdo;
+    
+        // verificação
+        $sql = $pdo -> prepare("SELECT id_admin FROM administradores WHERE email = :e AND  senha = :s");
+        $sql -> bindValue(":e", $email);
+        $sql -> bindValue(":s", md5($senha));
+        $sql -> execute();
+    
+        if ($sql -> rowCount() > 0){
+            //iniciar sessão
+            $dado = $sql -> fetch();
+            session_start();
+            $_SESSION['id_admin'] = $dado['id_admin'];
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    /* ABAIXO ESTÁ A FUNÇÃO PARA CADASTRO DE PRODUTOS NO BANCO DE DADOS*/
+    public function cadastrarProd($data, $tamanho, $quantidade){
+        global $pdo;
+        $sql = $pdo -> prepare("INSERT INTO administradores ($data, $tamanho, $quantidade) VALUES(:d, :t, :q)");
+        $sql -> bindValue(":d", $data);
+        $sql -> bindValue(":t", $tamanho);
+        $sql -> bindValue(":q", $quantidade);
+            
+        $sql -> execute();
+        return true;
+        }
+    
 }

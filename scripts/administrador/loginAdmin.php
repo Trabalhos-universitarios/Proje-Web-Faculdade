@@ -1,6 +1,6 @@
 <?php
-    require_once '../backEnd/administradores.php';
-    $user = new admin();
+    require_once '../backEnd/usuarios.php';
+    $user = new usuario();
     
     define('host_name', 'localhost');
     define('host_user', 'root');

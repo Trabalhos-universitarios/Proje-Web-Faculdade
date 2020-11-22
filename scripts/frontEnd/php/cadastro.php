@@ -5,6 +5,7 @@
     define('host_name', 'localhost');
     define('host_user', 'root');
     define('host_pwd', "");
+    define('db_name', 'projeto_borrowbag');
     ?>
     
     <!DOCTYPE html>
@@ -47,8 +48,9 @@
                 <p>
                     <a href="login.php"><strong>Voltar ao login</strong></a> <!-- essa ancora permite voltar ao login -->
                 </p>
+                </div>
         </form>
-        </div>
+        
 
         <?php
         if (isset($_POST['primeiro_nome'])) {
