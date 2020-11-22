@@ -25,7 +25,6 @@ body{
     
 }
 #menuOpcoes a{
-    text-decoration: none;
     color: orangered;
     text-transform: uppercase;
     font-weight: 600;
@@ -40,6 +39,7 @@ body{
 
 /* faz o efeito branco nas letras do menu quando passa o mouse em cima*/
 #menuOpcoes ul li a:hover{
+    text-decoration: underline;
     color:white;
 }
 #menuOpcoes ul li a.active{ 

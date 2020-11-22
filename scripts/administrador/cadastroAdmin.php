@@ -20,19 +20,20 @@ define('db_name', 'projeto_borrowbag');
 
 <!-- Esse trecho de código é responsável por atacar o body da tela de cadastro -->
 <style>
-    div#corpo-form-cad input{
-    display: block;
-    height: 30px;
-    width: 400px;
-    margin: 10px;
-    border-radius: 30px;
-    border: 1px solid orangered;
-    font-size: 12pt;
-    padding: 16px 20px;
-    background-color: rgba(255,255,255,0.01);
-    color: black;
-    outline: none;
-}
+    div#corpo-form-cad input {
+        display: block;
+        height: 30px;
+        width: 400px;
+        margin: 10px;
+        border-radius: 30px;
+        border: 1px solid orangered;
+        font-size: 12pt;
+        padding: 16px 20px;
+        background-color: rgba(255, 255, 255, 0.01);
+        color: black;
+        outline: none;
+    }
+
     body {
         font-family: Arial, Helvetica, sans-serif;
         background-image: url("../frontEnd/img/fundoTelaAdmin.jpg");
@@ -43,20 +44,25 @@ define('db_name', 'projeto_borrowbag');
         color: orangered;
         text-align: center;
     }
-    h1{
+
+    h1 {
         color: black;
     }
+
     /*ATACANDO OS PLACEHOLDERS PARA MUDAR SUAS CORES*/
-    ::-webkit-input-placeholder{
+    ::-webkit-input-placeholder {
         color: black;
     }
-    :-moz-placeholder{
+
+    :-moz-placeholder {
         color: black;
     }
-    ::-moz-placeholder{
+
+    ::-moz-placeholder {
         color: black;
     }
-    :-ms-input-placeholder{
+
+    :-ms-input-placeholder {
         color: black;
     }
 </style>
@@ -78,8 +84,9 @@ define('db_name', 'projeto_borrowbag');
             <p>
                 <a href="loginAdmin.php"><strong>Voltar ao login</strong></a> <!-- essa ancora permite voltar ao login -->
             </p>
+        </div>
     </form>
-    </div>
+
 
     <?php
     if (isset($_POST['cargo'])) {
