@@ -1,7 +1,7 @@
 <?php
-    require_once '../backEnd/usuarios.php';
-    $user = new usuario();
-
+    require_once '../backEnd/administradores.php';
+    $user = new admin();
+    
     define('host_name', 'localhost');
     define('host_user', 'root');
     define('host_pwd', "");
@@ -31,7 +31,7 @@
     font-size: 12pt;
     padding: 16px 20px;
     background-color: rgba(255,255,255,0.01);
-    color: white;
+    color: black;
     outline: none;
 }
     body {
@@ -65,12 +65,12 @@
 <body>
     <!--Aqui está os inputs do formulário de login-->
     <div id="corpo-form">
-        <h1>Login</h1>
+        <h1>Login Administrador</h1>
         <form method="POST">
             <!--Quando o Back End estiver pronto a ação será buscar nele o login e a senha, ou seja, no documento processaDados.php-->
             <input id="email" name="email" required="required" type="email" placeholder="E-mail" />
             <input id="senha" name="senha" required="required" type="password" placeholder="Senha" />
-            <input id="submit" name="logar" type="submit" value="Acessar" />
+            <input id="submit" name="logarAdmin" type="submit" value="Acessar" />
             <strong> Ainda não é cadastrado? </strong>
             <a href="cadastroAdmin.php"><strong>Cadastre-se</strong></a>
         </form>
@@ -85,11 +85,11 @@
     if (!empty($email) && !empty($senha)) {
         $user -> conectar(db_name, host_name,host_user,host_pwd);
         if ($user -> msgErro == ""){
-            if($user -> logar($email, $senha)){
-                header("location: paginaPrincipal.php");
+            if($user -> logarAdmin($email, $senha)){
+                header("location: administra.php");
             } else {
                 ?>
-                <div class="msg-erro" style="color: red;"><strong> E-mail ou senha não conferem </strong></div>
+                <div class="msg-erro" style="color: red;"><strong> E-mail não cadastrado </strong></div>
             <?php
             }
         } else {

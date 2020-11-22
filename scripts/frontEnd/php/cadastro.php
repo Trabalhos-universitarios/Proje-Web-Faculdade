@@ -5,7 +5,6 @@
     define('host_name', 'localhost');
     define('host_user', 'root');
     define('host_pwd', "");
-    define('db_name', 'projeto_borrowbag');
     ?>
     
     <!DOCTYPE html>

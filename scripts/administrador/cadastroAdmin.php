@@ -1,11 +1,12 @@
 <?php
 require_once '../backEnd/administradores.php';
-$userAdmin = new admin();
+$user = new admin();
 
 define('host_name', 'localhost');
 define('host_user', 'root');
 define('host_pwd', "");
 define('db_name', 'projeto_borrowbag');
+define('table', 'administradores');
 ?>
 
 <!DOCTYPE html>
@@ -92,10 +93,10 @@ define('db_name', 'projeto_borrowbag');
         $confere_Senha = addslashes($_POST['confere_senha']);
 
         if (!empty($cargo) && !empty($nome) && !empty($CPF) && !empty($telefone) && !empty($email) && !empty($senha) && !empty($confere_Senha)) {
-            $userAdmin->conectar(db_name, host_name, host_user, host_pwd);
-            if ($userAdmin->msgErro == "") {
+            $user->conectar(db_name, host_name, host_user, host_pwd);
+            if ($user->msgErro == "") {
                 if ($senha == $confere_Senha) {
-                    if ($userAdmin->cadastrar($cargo, $nome, $CPF, $telefone, $email, $senha, $confere_Senha)) {
+                    if ($user->cadastrarAdmin($cargo, $nome, $CPF, $telefone, $email, $senha, $confere_Senha)) {
     ?>
                         <div id="msg-sucesso" style="color: green;"><strong>E-mail cadastrado com sucesso!</strong></div>
                     <?php
@@ -112,7 +113,7 @@ define('db_name', 'projeto_borrowbag');
             } else {
                 ?>
                 <div class="msg-erro" style="color: red;">
-                    <?php echo "ERRO: " . $userAdmin->$msgErro; ?>
+                    <?php echo "ERRO: " . $user->$msgErro; ?>
                 </div>
             <?php
             }

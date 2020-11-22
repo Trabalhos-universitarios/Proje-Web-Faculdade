@@ -5,6 +5,7 @@ Class usuario
     private $pdo;
     public $msgErro = "";
 
+    /** FUNÇÃO QUE CONECTA COM O BANCO DE DADOS MYSQL */
     public function conectar($nome, $host, $usuario, $senha){
         global $pdo;
         global $msgErro;
@@ -16,6 +17,7 @@ Class usuario
         }
     }
 
+    /** FUNÇÃO DE CADASTRO DE USUARIO EXTERNO (CLIENTE) */
     public function cadastrar($primeiro_nome, $ultimo_nome, $email, $telefone, $senha){
         global $pdo;
         //verificação
@@ -39,6 +41,7 @@ Class usuario
 
     }
 
+    /** FUNÇÃO DE LOGIN DE USUARIO EXTERNO (CLIENTE) */
     public function logar($email, $senha){
         global $pdo;
 

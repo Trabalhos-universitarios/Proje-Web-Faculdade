@@ -1,9 +1,10 @@
 <?php
 
-class admin{
+class admin {
     private $pdo;
     public $msgErro = "";
 
+    /** FUNÇÃO QUE CONECTA COM O BANCO DE DADOS MYSQL */
     public function conectar($nome, $host, $usuario, $senha){
         global $pdo;
         global $msgErro;
@@ -15,7 +16,10 @@ class admin{
         }
     }
 
-    public function cadastrar($cargo, $nome, $CPF, $telefone, $email, $senha){
+    /** ABAIXO ESTÃO AS FUNÇÕES DA AREA DOS ADMINISTRADORES DO SITE */
+
+    /** FUNÇÃO DE CADASTRO DE ADMINISTRADOR INTERNO (FUNCIONARIO ETC...) */
+    public function cadastrarAdmin($cargo, $nome, $CPF, $telefone, $email, $senha){
         global $pdo;
         //verificação
         $sql = $pdo -> prepare("SELECT id_admin FROM administradores WHERE email = :e");
@@ -38,8 +42,9 @@ class admin{
         }
     
     }
-    
-    public function logar($email, $senha){
+
+    /** FUNÇÃO DE LOGIN DE ADMINISTRADOR INTERNO (FUNCIONARIO ETC...) */
+    public function logarAdmin($email, $senha){
         global $pdo;
     
         // verificação
@@ -61,3 +66,4 @@ class admin{
 }
 
 
+?>
