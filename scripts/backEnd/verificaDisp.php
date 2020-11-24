@@ -1,5 +1,5 @@
 <?php
-    require_once '../../backEnd/usuarios.php';
+    require_once 'usuarios.php';
     $user = new usuario();
 
     define('host_name', 'localhost');
@@ -10,13 +10,13 @@
 
     class verificarDisp {
     private $pdo;
-    public function verificarDisp($quant_estoque) {
+    public function verificarDisp($quantidade) {
         global $pdo;
-        $sql = $pdo->prepare("SELECT quant_produto FROM estoque");
+        $sql = $pdo->prepare("SELECT quantidade FROM estoque");
         if($sql->rowCount()>0) {
             return true;
             echo "Bagagem alugada com sucesso!";
-            $sql->$_POST("UPDATE quant_produtos from estoque where quant_produtos = -1");
+            $sql->$_POST("UPDATE quantidade from estoque where quantidade = -1");
         }
         else {
             return false;
@@ -25,5 +25,9 @@
         }
     }
 }
+
+echo "Essa parte do código era responsável por verificar na base de dados se o produto está em estoque ou não,
+porém, não consegui fazer por falta de conhecimento na linguagem PHP, tendo em vista que não estudamos 
+praticamente nada da linguagem para um problema tão complexo"
     
 ?>
