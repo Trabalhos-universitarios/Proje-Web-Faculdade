@@ -122,5 +122,28 @@ Class usuario
         $sql -> execute();
         return true;
         }
+
+        /** FUNÇÃO DE BUSCA DE PRODUTOS NA BASE DE DADOS */
+    public function inserir($data, $tamanho, $quantidade){
+        global $pdo;
+
+        // verificação
+        $sql = $pdo -> prepare("SELECT id_produto FROM estoque WHERE $data = :d AND  $tamanho = :t AND $quantidade = q");
+        $sql -> bindValue(":d", $data);
+        $sql -> bindValue(":t", ($tamanho));
+        $sql -> bindValue(":q", $quantidade);
+        $sql -> execute();
+
+        if ($sql -> rowCount() > 0){
+            //iniciar sessão
+            $dado = $sql -> fetch();
+            session_start();
+            $_SESSION['id_produto'] = $dado['id_produto'];
+            return true;
+        } else {
+            return false;
+        }
+
+    }
     
 }
