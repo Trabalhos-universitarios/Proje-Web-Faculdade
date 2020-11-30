@@ -89,7 +89,7 @@ define('db_name', 'projeto_borrowbag');
 
 
     <?php
-    if (isset($_POST['cargo'])) {
+    if (isset($_POST['nome'])) {
         $cargo = addslashes($_POST['cargo']);
         $nome = addslashes($_POST['nome']);
         $CPF = addslashes($_POST['CPF']);
@@ -99,8 +99,8 @@ define('db_name', 'projeto_borrowbag');
         $confere_Senha = addslashes($_POST['confere_senha']);
 
         if (!empty($cargo) && !empty($nome) && !empty($CPF) && !empty($telefone) && !empty($email) && !empty($senha) && !empty($confere_Senha)) {
-            $user->conectar(db_name, host_name, host_user, host_pwd);
-            if ($user->msgErro == "") {
+            $user->conectar("projeto_borrowbag", "localhost", "root", "");
+            if ($user -> msgErro == "") {
                 if ($senha == $confere_Senha) {
                     if ($user->cadastrarAdmin($cargo, $nome, $CPF, $telefone, $email, $senha, $confere_Senha)) {
     ?>
